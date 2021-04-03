@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstraintSolver", "ConstraintSolver\ConstraintSolver.csproj", "{9EBA961E-B72E-46F1-9FE3-2D5ED6CD0742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstraintSolver.Core", "ConstraintSolver.Core\ConstraintSolver.Core.csproj", "{54F49846-1602-4BEE-8E1E-978C8CBBB90F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstraintSolver.Problems", "ConstraintSolver.Problems\ConstraintSolver.Problems.csproj", "{22BE448A-3B2F-41D9-907E-BC98956BAAA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EBA961E-B72E-46F1-9FE3-2D5ED6CD0742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBA961E-B72E-46F1-9FE3-2D5ED6CD0742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBA961E-B72E-46F1-9FE3-2D5ED6CD0742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBA961E-B72E-46F1-9FE3-2D5ED6CD0742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F49846-1602-4BEE-8E1E-978C8CBBB90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F49846-1602-4BEE-8E1E-978C8CBBB90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F49846-1602-4BEE-8E1E-978C8CBBB90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F49846-1602-4BEE-8E1E-978C8CBBB90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BE448A-3B2F-41D9-907E-BC98956BAAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BE448A-3B2F-41D9-907E-BC98956BAAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BE448A-3B2F-41D9-907E-BC98956BAAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BE448A-3B2F-41D9-907E-BC98956BAAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
