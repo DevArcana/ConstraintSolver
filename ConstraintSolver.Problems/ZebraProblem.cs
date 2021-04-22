@@ -104,21 +104,10 @@ namespace ConstraintSolver.Problems
             _problem = problem;
         }
 
-        public void Solve()
+        public AbstractProblem Solve()
         {
-            if (_problem.Solve())
-            {
-                var assignments = _problem.Assignments;
-                foreach (var house in assignments.Keys.GroupBy(key => assignments[key]).OrderBy(x => x.Key))
-                {
-                    var attributes = string.Join("| ", house.Select(x => x.PadRight(15)).ToArray());
-                    Console.WriteLine($"House {house.Key} {attributes}");
-                }
-            }
-            else
-            {
-                Console.WriteLine("No solution found!");
-            }
+            _problem.Solve();
+            return _problem;
         }
     }
 }

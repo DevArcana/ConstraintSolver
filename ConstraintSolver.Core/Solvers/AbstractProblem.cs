@@ -8,9 +8,13 @@ namespace ConstraintSolver.Core.Solvers
     {
         public readonly Dictionary<string, int> Assignments = new();
         protected readonly Dictionary<string, Variable> Variables = new();
+        
+        public int AssignmentsDone { get; private set; }
+        public TimeSpan? Elapsed { get; private set; }
 
         protected void Assign(Variable variable, int value)
         {
+            AssignmentsDone++;
             Assignments[variable.Name] = value;
         }
 
@@ -49,7 +53,7 @@ namespace ConstraintSolver.Core.Solvers
             var result = Execute();
             stopwatch.Stop();
 
-            Console.WriteLine($"Result: {result} | Time elapsed: {stopwatch.ElapsedMilliseconds}ms");
+            Elapsed = stopwatch.Elapsed;
 
             return result;
         }
