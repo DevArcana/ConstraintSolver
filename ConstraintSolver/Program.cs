@@ -3,12 +3,12 @@ using ConstraintSolver.Problems;
 
 namespace ConstraintSolver
 {
-  class Program
-  {
-    static void Main(string[] args)
+    internal class Program
     {
-      var problem = new ZebraProblem(new BacktrackingProblem());
-      problem.Solve();
+        private static void Main(string[] args)
+        {
+            var problem = new ZebraProblem(new BacktrackingProblem());
+            problem.Solve();
+        }
     }
-  }
 }
